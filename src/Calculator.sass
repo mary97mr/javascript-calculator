@@ -1,0 +1,88 @@
+body
+  background-color: #d8e2dc
+#root 
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  .calculator-box
+    max-width: 500px
+    height: 750px
+    padding: 20px
+    background-color: #4c4c4c
+    border-radius: 20px
+    .screen
+      height: 90px
+      text-align: right
+      padding: 10px 20px
+      border-bottom: 1px solid #ccc5b9
+      #formula
+        color: #fb8500
+        font-size: 22px
+        height: 50%
+      #display
+        color: #ccc5b9
+        font-size: 30px
+    .keyboard
+      margin-top: 20px
+      display: flex
+      flex-wrap: wrap
+      padding: 0 10px
+      font-size: 30px
+      font-weight: 600
+      .button
+        background-color: #403d39
+        color: #ccc5b9
+        cursor: pointer
+        height: 100px
+        width: 100px
+        margin-right: 10px
+        border-radius: 50%
+        margin-bottom: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow:  4px 5px 5px black
+        &:hover
+          background-color: #fb8500
+          color: #403d39
+      #clear, #zero
+        width: 200px
+        border-radius: 30px
+        margin-right: 20px
+        margin-bottom: 15px
+      #equals 
+        position: relative
+        bottom: 115px
+        height: 210px
+        border-radius: 30px
+
+
+
+
+//Media query
+
+@media(max-width: 500px)
+  #root
+    .calculator-box
+      max-width: 410px
+      height: 620px
+      padding: 0
+      .keyboard
+        margin-left: 20px
+        font-size: 22px
+        font-weight: 600
+        .button
+          height: 80px
+          width: 80px
+        #clear, #zero
+          width: 160px
+        #equals
+          position: relative
+          bottom: 90px
+          height: 170px
+
+
+
+
+
